@@ -7,6 +7,11 @@
 //
 
 #import "AppDelegate.h"
+#import "classes/Essence/Contorller/XMGEssenceViewController.h"
+#import "classes/FriendTrend/Contorller/XMGFriendTrendController.h"
+#import "classes/Publish/Contorller/XMGPublishViewController.h"
+#import "classes/Me/Contorller/XMGMeViewController.h"
+#import "classes/New/Contorller/XMGNewViewController.h"
 
 @interface AppDelegate ()
 
@@ -15,8 +20,48 @@
 @implementation AppDelegate
 
 
+static void addNavigationView(UIViewController *viewController,
+                              UITabBarController *tabBarVc,
+                              NSString *title,
+                              NSString *imageName,
+                              NSString *selectedImageName) {
+    UINavigationController *navController = [[UINavigationController alloc] init];
+    
+    navController.tabBarItem.title = title;
+    navController.tabBarItem.image = [UIImage imageNamed:imageName];
+    NSLog(@"Image %@", [UIImage imageNamed:imageName]);
+    navController.tabBarItem.selectedImage = [UIImage imageNamed :selectedImageName];
+    [navController addChildViewController:viewController];
+    [tabBarVc addChildViewController:navController];
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    //1： create the window
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+   
+    //2: set the root controller
+    UITabBarController *tabBarVc = [[UITabBarController alloc] init];
+    self.window.rootViewController = tabBarVc;
+    
+    // 2.1 添加5个子控制器
+    XMGEssenceViewController *essenceViewControlelr = [[XMGEssenceViewController alloc] init];
+    addNavigationView(essenceViewControlelr, tabBarVc,@"精华", @"tarBar_essence_icon", @"tarBar_essence_click_icon");
+    
+    XMGFriendTrendController *friendTrendViewController = [[XMGFriendTrendController alloc] init];
+    addNavigationView(friendTrendViewController, tabBarVc, @"关注", @"tarBar_friendTrends_icon", @"tarBar_friendTrends_click_icon");
+    
+    XMGPublishViewController *publishVC = [[XMGPublishViewController alloc] init];
+    addNavigationView(publishVC, tabBarVc, @"发布", @"tarBar_publish_icon", @"tarBar_publish_click_icon");
+    
+    XMGMeViewController *meVc = [[XMGMeViewController alloc] init];
+    addNavigationView(meVc, tabBarVc, @"我", @"tarBar_me_icon", @"tarBar_me_click_icon");
+
+    XMGNewViewController *newVc = [[XMGNewViewController alloc] init];
+    addNavigationView(newVc, tabBarVc, @"新帖", @"tarBar_new_icon", @"tarBar_new_click_icon");
+    
+    // 3 显示window
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
