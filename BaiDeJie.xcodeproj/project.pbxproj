@@ -12,7 +12,7 @@
 		E618862A229CA20D00F4E0AF /* XMGEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E618861F229CA20D00F4E0AF /* XMGEssenceViewController.m */; };
 		E618862B229CA20D00F4E0AF /* XMGMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6188622229CA20D00F4E0AF /* XMGMeViewController.m */; };
 		E618862C229CA20D00F4E0AF /* XMGNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6188626229CA20D00F4E0AF /* XMGNewViewController.m */; };
-		E618862E229CACB000F4E0AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E618862D229CACB000F4E0AF /* Assets.xcassets */; };
+		E64A9B28229F4916009A0B64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E64A9B27229F4916009A0B64 /* Assets.xcassets */; };
 		E6953F3E229C958300FDA36F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6953F3D229C958300FDA36F /* AppDelegate.m */; };
 		E6953F44229C958300FDA36F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6953F42229C958300FDA36F /* Main.storyboard */; };
 		E6953F49229C958300FDA36F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6953F47229C958300FDA36F /* LaunchScreen.storyboard */; };
@@ -49,7 +49,7 @@
 		E6188623229CA20D00F4E0AF /* XMGMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGMeViewController.h; sourceTree = "<group>"; };
 		E6188626229CA20D00F4E0AF /* XMGNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGNewViewController.m; sourceTree = "<group>"; };
 		E6188627229CA20D00F4E0AF /* XMGNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGNewViewController.h; sourceTree = "<group>"; };
-		E618862D229CACB000F4E0AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E64A9B27229F4916009A0B64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6953F39229C958300FDA36F /* BaiDeJie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaiDeJie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6953F3C229C958300FDA36F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E6953F3D229C958300FDA36F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -210,7 +210,7 @@
 		E6953F3B229C958300FDA36F /* BaiDeJie */ = {
 			isa = PBXGroup;
 			children = (
-				E618862D229CACB000F4E0AF /* Assets.xcassets */,
+				E64A9B27229F4916009A0B64 /* Assets.xcassets */,
 				E6188613229CA20D00F4E0AF /* classes */,
 				E6953F3C229C958300FDA36F /* AppDelegate.h */,
 				E6953F3D229C958300FDA36F /* AppDelegate.m */,
@@ -344,7 +344,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6953F49229C958300FDA36F /* LaunchScreen.storyboard in Resources */,
-				E618862E229CACB000F4E0AF /* Assets.xcassets in Resources */,
+				E64A9B28229F4916009A0B64 /* Assets.xcassets in Resources */,
 				E6953F44229C958300FDA36F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

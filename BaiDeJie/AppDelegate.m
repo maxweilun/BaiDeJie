@@ -28,8 +28,7 @@ static void addNavigationView(UIViewController *viewController,
     UINavigationController *navController = [[UINavigationController alloc] init];
     
     navController.tabBarItem.title = title;
-    navController.tabBarItem.image = [UIImage imageNamed:imageName];
-    NSLog(@"Image %@", [UIImage imageNamed:imageName]);
+    navController.tabBarItem.image = [UIImage imageNamed:@"tarBar_essence_icon"];
     navController.tabBarItem.selectedImage = [UIImage imageNamed :selectedImageName];
     [navController addChildViewController:viewController];
     [tabBarVc addChildViewController:navController];
@@ -44,6 +43,7 @@ static void addNavigationView(UIViewController *viewController,
     UITabBarController *tabBarVc = [[UITabBarController alloc] init];
     self.window.rootViewController = tabBarVc;
     
+    NSLog(@"Image %@", [UIImage imageNamed:@"tarBar_essence_icon"]);
     // 2.1 添加5个子控制器
     XMGEssenceViewController *essenceViewControlelr = [[XMGEssenceViewController alloc] init];
     addNavigationView(essenceViewControlelr, tabBarVc,@"精华", @"tarBar_essence_icon", @"tarBar_essence_click_icon");
